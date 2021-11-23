@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-23T14:17:21 EAT" name="Default suite" finished-at="2021-11-23T14:17:21 EAT" duration-ms="46">
+    <groups>
+    </groups>
+    <test started-at="2021-11-23T14:17:21 EAT" name="Default test" finished-at="2021-11-23T14:17:21 EAT" duration-ms="46">
+      <class name="com.project.CMSC495.GetterSetterTesting">
+        <test-method is-config="true" signature="setTestData()[pri:0, instance:com.project.CMSC495.GetterSetterTesting@4d0f2471]" started-at="2021-11-23T14:17:21 EAT" name="setTestData" finished-at="2021-11-23T14:17:21 EAT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestData -->
+        <test-method signature="channelTest()[pri:0, instance:com.project.CMSC495.GetterSetterTesting@4d0f2471]" started-at="2021-11-23T14:17:21 EAT" name="channelTest" description="Tests the getter and setter of channels" finished-at="2021-11-23T14:17:21 EAT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- channelTest -->
+        <test-method signature="emailTest()[pri:0, instance:com.project.CMSC495.GetterSetterTesting@4d0f2471]" started-at="2021-11-23T14:17:21 EAT" name="emailTest" description="Tests the getter and setter of email" finished-at="2021-11-23T14:17:21 EAT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailTest -->
+        <test-method signature="idTest()[pri:0, instance:com.project.CMSC495.GetterSetterTesting@4d0f2471]" started-at="2021-11-23T14:17:21 EAT" name="idTest" description="Tests the getter and setter of id" finished-at="2021-11-23T14:17:21 EAT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- idTest -->
+        <test-method signature="nameTest()[pri:0, instance:com.project.CMSC495.GetterSetterTesting@4d0f2471]" started-at="2021-11-23T14:17:21 EAT" name="nameTest" description="Tests the getter and setter of name" finished-at="2021-11-23T14:17:21 EAT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameTest -->
+        <test-method signature="providerTest()[pri:0, instance:com.project.CMSC495.GetterSetterTesting@4d0f2471]" started-at="2021-11-23T14:17:21 EAT" name="providerTest" description="Tests the getter and setter of provider" finished-at="2021-11-23T14:17:21 EAT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- providerTest -->
+      </class> <!-- com.project.CMSC495.GetterSetterTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
