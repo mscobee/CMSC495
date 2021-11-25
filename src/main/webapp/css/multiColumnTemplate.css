@@ -122,6 +122,15 @@
 	margin-bottom: 15px;
 	color: #B3B3B3;
 }
+
+.container .left_article li {
+	list-style: inside;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: justify;
+	line-height: 24px;
+	color: #B3B3B3;
+}
 .right_article {
 	width: 40%;
 	float: left;
@@ -139,7 +148,7 @@
 }
 .right_article ul li {
 	font-family: "Source Sans Pro";
-	list-style: none;
+	list-style: inside;
 	text-align: center;
 	background-color: #B3B3B3;
 	width: 90%;
@@ -158,6 +167,11 @@
 .right_article ul li:hover {
 	background-color: #717070;
 	cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-style: italic;
 }
 
 /* TABLES */

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <html>
@@ -43,16 +44,36 @@
         <h2>Your Info</h2>
         <form:form action="submit" method="post" modelAttribute="user">
             <form:label path="name">First name:</form:label>
+            <form:errors path="name" cssClass="error" />
             <form:input path="name"/><br/>
+            
              
             <form:label path="email">E-mail:</form:label>
+            <form:errors path="email" cssClass="error" />
             <form:input path="email"/><br/>
+            
 
             <form:label path="provider">Cable Provider:</form:label>
-            <form:select path="provider" items="${providerList}" /><br/>
+            <form:select path="provider">
+              <form:option value="fios" label="FiOS"/>
+              <form:option value="cox" label="Cox"/>
+              <form:option value="comcast" label="Comcast"/>
+            </form:select>
+
             
             <form:label path="channels">Channel Package:</form:label>
-            <form:select path="channels" items="${channelsList}" /><br/>
+            <form:select path="channels">
+              <form:option value="FIOS1" label="The Most FiOS TV"/>
+              <form:option value="FIOS2" label="More FiOS TV"/>
+              <form:option value="cox1" label="Contour TV Starter"/>
+              <form:option value="cox2" label="Contour TV Preferred"/>
+              <form:option value="cox3" label="Contour TV Preferred Plus"/>
+              <form:option value="cox4" label="Contour TV Ultimate"/>
+              <form:option value="comcast1" label="STANDARD+"/>
+              <form:option value="comcast2" label="SELECT+"/>
+              <form:option value="comcast3" label="SIGNATURE+"/>
+              <form:option value="comcast4" label="SUPER+"/>
+            </form:select>
             
             <input type="Submit" value="Submit">                 
 			<input type="reset" value="Reset">
@@ -60,10 +81,10 @@
     </div>
 <div class="row blockDisplay">
     <div class="column_half left_half">
-      <h2 class="column_title">DATE</h2>
+      <h2 class="column_title"><%= new SimpleDateFormat("E, MMMM dd yyyy").format(new java.util.Date())%></h2>
     </div>
     <div class="column_half right_half">
-      <h2 class="column_title">TIME</h2>
+      <h2 class="column_title"><%= new SimpleDateFormat("HH:mm:ss, z").format(new java.util.Date())%></h2>
     </div>
   </div>
   <div class="social">

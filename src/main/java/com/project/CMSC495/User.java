@@ -3,6 +3,8 @@ package com.project.CMSC495;
 import java.util.Arrays;
 import java.util.List;
 import javax.persistence.*;
+import javax.validation.constraints.*;
+
 
 
 @Entity
@@ -13,7 +15,10 @@ public class User {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="id")
 	private int id;
+	@NotBlank
     private String name;
+    @NotBlank
+    @Email(message = "Please enter a valid e-mail address")
     private String email;
     private String provider;
     private String channels;

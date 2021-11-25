@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,20 +53,12 @@
   </section>
   <div class="row">  
 
-
-
-
-
-
-
-
-
 <div class="row blockDisplay">
     <div class="column_half left_half">
-      <h2 class="column_title">DATE</h2>
+      <h2 class="column_title"><%= new SimpleDateFormat("E, MMMM dd yyyy").format(new java.util.Date())%></h2>
     </div>
     <div class="column_half right_half">
-      <h2 class="column_title">TIME</h2>
+      <h2 class="column_title"><%= new SimpleDateFormat("HH:mm:ss, z").format(new java.util.Date())%></h2>
     </div>
   </div>
   <div class="social">

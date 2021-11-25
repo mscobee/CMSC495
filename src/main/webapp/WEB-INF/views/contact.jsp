@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %> 
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,15 +30,15 @@
     <h2 class="noDisplay">REPORT</h2>
     <article class="left_article">
 	<div class="container">
-	  <form action="action_page.php">
+	  <form action="submit">
 
 		<label for="fname">First Name</label>
-		<input type="text" id="fname" name="firstname" placeholder="Your name..">
+		<input type="text" id="fname" name="firstname" placeholder="This is not configured yet...">
 
 		<label for="lname">Last Name</label>
-		<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		<input type="text" id="lname" name="lastname" placeholder="Wont work...">
 		<label for="subject">Subject</label>
-		<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+		<textarea id="subject" name="subject" placeholder="This will send an email to admins once properly configured." style="height:200px"></textarea>
 
 		<input type="submit" value="Submit">
 
@@ -45,12 +46,12 @@
 	</div>
   </article>
   </section>
-  <div class="row blockDisplay">
+<div class="row blockDisplay">
     <div class="column_half left_half">
-      <h2 class="column_title">DATE</h2>
+      <h2 class="column_title"><%= new SimpleDateFormat("E, MMMM dd yyyy").format(new java.util.Date())%></h2>
     </div>
     <div class="column_half right_half">
-      <h2 class="column_title">TIME</h2>
+      <h2 class="column_title"><%= new SimpleDateFormat("HH:mm:ss, z").format(new java.util.Date())%></h2>
     </div>
   </div>
   <div class="social">
