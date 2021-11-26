@@ -19,31 +19,31 @@ public class GetterSetterTesting {
 	}
 	
 	@Test (description="Tests the getter and setter of id")
-	public void idTest() {
+	protected void idTest() {
 		user.setId(idTest);
 		Assert.assertEquals(idTest, user.getId());
 	}
 	
 	@Test (description="Tests the getter and setter of name")
-	public void nameTest() {
+	protected void nameTest() {
 		user.setName(nameTest);
 		Assert.assertEquals(nameTest, user.getName());
 	}
 	
 	@Test (description="Tests the getter and setter of email")
-	public void emailTest() {
+	protected void emailTest() {
 		user.setEmail(emailTest);
 		Assert.assertEquals(emailTest, user.getEmail());
 	}
 	
 	@Test (description="Tests the getter and setter of provider")
-	public void providerTest() {
+	protected void providerTest() {
 		user.setProvider(providerTest);
 		Assert.assertEquals(providerTest, user.getProvider());
 	}
 	
 	@Test (description="Tests the getter and setter of channels")
-	public void channelTest() {
+	protected void channelTest() {
 		user.setChannels(channelTest);
 		Assert.assertEquals(channelTest, user.getChannels());
 	}
