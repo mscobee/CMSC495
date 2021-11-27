@@ -3,7 +3,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class GetterSetterTesting {
+public class GetterSetterTest {
 	private User user;
 	private int idTest;
 	private String nameTest, emailTest, providerTest, channelTest;

@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-26T02:47:20 EST" name="Default suite" finished-at="2021-11-26T02:47:20 EST" duration-ms="64">
+  <suite started-at="2021-11-26T23:09:43 EST" name="Default suite" finished-at="2021-11-26T23:09:43 EST" duration-ms="49">
     <groups>
     </groups>
-    <test started-at="2021-11-26T02:47:20 EST" name="Default test" finished-at="2021-11-26T02:47:20 EST" duration-ms="64">
-      <class name="com.project.CMSC495.GetterSetterTesting">
-        <test-method is-config="true" signature="setTestData()[pri:0, instance:com.project.CMSC495.GetterSetterTesting@28f2a10f]" started-at="2021-11-26T02:47:20 EST" name="setTestData" finished-at="2021-11-26T02:47:20 EST" duration-ms="8" status="PASS">
+    <test started-at="2021-11-26T23:09:43 EST" name="Default test" finished-at="2021-11-26T23:09:43 EST" duration-ms="49">
+      <class name="com.project.CMSC495.MappingTest">
+        <test-method signature="testAbout()[pri:0, instance:com.project.CMSC495.MappingTest@223aa2f7]" started-at="2021-11-26T23:09:43 EST" name="testAbout" description="Tests mapping to /about" finished-at="2021-11-26T23:09:43 EST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setTestData -->
-        <test-method signature="channelTest()[pri:0, instance:com.project.CMSC495.GetterSetterTesting@28f2a10f]" started-at="2021-11-26T02:47:20 EST" name="channelTest" description="Tests the getter and setter of channels" finished-at="2021-11-26T02:47:20 EST" duration-ms="8" status="PASS">
+        </test-method> <!-- testAbout -->
+        <test-method signature="testContact()[pri:0, instance:com.project.CMSC495.MappingTest@223aa2f7]" started-at="2021-11-26T23:09:43 EST" name="testContact" description="Tests mapping to /contact" finished-at="2021-11-26T23:09:43 EST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- channelTest -->
-        <test-method signature="emailTest()[pri:0, instance:com.project.CMSC495.GetterSetterTesting@28f2a10f]" started-at="2021-11-26T02:47:20 EST" name="emailTest" description="Tests the getter and setter of email" finished-at="2021-11-26T02:47:20 EST" duration-ms="1" status="PASS">
+        </test-method> <!-- testContact -->
+        <test-method signature="testIndex()[pri:0, instance:com.project.CMSC495.MappingTest@223aa2f7]" started-at="2021-11-26T23:09:43 EST" name="testIndex" description="Tests mapping to index" finished-at="2021-11-26T23:09:43 EST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- emailTest -->
-        <test-method signature="idTest()[pri:0, instance:com.project.CMSC495.GetterSetterTesting@28f2a10f]" started-at="2021-11-26T02:47:20 EST" name="idTest" description="Tests the getter and setter of id" finished-at="2021-11-26T02:47:20 EST" duration-ms="1" status="PASS">
+        </test-method> <!-- testIndex -->
+        <test-method signature="testResults()[pri:0, instance:com.project.CMSC495.MappingTest@223aa2f7]" started-at="2021-11-26T23:09:43 EST" name="testResults" description="Tests mapping to /results" finished-at="2021-11-26T23:09:43 EST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- idTest -->
-        <test-method signature="nameTest()[pri:0, instance:com.project.CMSC495.GetterSetterTesting@28f2a10f]" started-at="2021-11-26T02:47:20 EST" name="nameTest" description="Tests the getter and setter of name" finished-at="2021-11-26T02:47:20 EST" duration-ms="2" status="PASS">
+        </test-method> <!-- testResults -->
+        <test-method signature="testSlash()[pri:0, instance:com.project.CMSC495.MappingTest@223aa2f7]" started-at="2021-11-26T23:09:43 EST" name="testSlash" description="Tests mapping to /" finished-at="2021-11-26T23:09:43 EST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nameTest -->
-        <test-method signature="providerTest()[pri:0, instance:com.project.CMSC495.GetterSetterTesting@28f2a10f]" started-at="2021-11-26T02:47:20 EST" name="providerTest" description="Tests the getter and setter of provider" finished-at="2021-11-26T02:47:20 EST" duration-ms="1" status="PASS">
+        </test-method> <!-- testSlash -->
+        <test-method signature="testSubmit()[pri:0, instance:com.project.CMSC495.MappingTest@223aa2f7]" started-at="2021-11-26T23:09:43 EST" name="testSubmit" description="Tests mapping to submit" finished-at="2021-11-26T23:09:43 EST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- providerTest -->
-      </class> <!-- com.project.CMSC495.GetterSetterTesting -->
+        </test-method> <!-- testSubmit -->
+        <test-method signature="testUserguide()[pri:0, instance:com.project.CMSC495.MappingTest@223aa2f7]" started-at="2021-11-26T23:09:43 EST" name="testUserguide" description="Tests mapping to /userguide" finished-at="2021-11-26T23:09:43 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserguide -->
+      </class> <!-- com.project.CMSC495.MappingTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
