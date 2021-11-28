@@ -7,14 +7,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
-@Service("ChannelService")
-public class ChannelServiceImplement implements ChannelService{
+@Service("CostService")
+public class CostServiceImplement implements CostService{
 	
 	@Autowired
-	ChannelRepository channelRepository;
+	CostRepository costRepository;
 
 	@Override
-	public Iterable<Channels> getAllChannels() {
-		return channelRepository.findAll();
+	public Iterable<Cost> getAllCost() {
+		return costRepository.findAll();
 	}
 }

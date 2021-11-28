@@ -4,9 +4,9 @@ import java.util.List;
 
 import com.project.CMSC495.Channels;
 
-public interface ChannelService {
+public interface CostService {
 	
 	
-	public Iterable<Channels> getAllChannels();
+	public Iterable<Cost> getAllCost();
 	
 }
