@@ -1,3 +1,13 @@
+/* Name: Mohammed Shaikh, Michael Scobee, Eddy Owings, Anthony Pede
+ * CMSC 495
+ * Capstone project
+ * 
+ * This java file is the controller, and defines what the elements on the UI
+ * do behind the scenes. All of the buttons and dropdown lists are defined from here.
+ * Actions with buttons like submit or cancel are defined in this class.
+ * 
+ */
+
 package com.project.CMSC495;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,10 +19,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.validation.Valid;
-
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -28,7 +35,7 @@ public class MvcController {
 	
 	@GetMapping("/index") 
 	public String index() {
-		System.out.println("Going index..."); 
+		System.out.println("Going about..."); 
 		return "redirect:/"; 
 	}
 
@@ -46,27 +53,29 @@ public class MvcController {
 	
 	@GetMapping("/userguide") 
 	public String userguide() {
-		System.out.println("Going userguide..."); 
+		System.out.println("Going contact..."); 
 		return "userguide"; 
 	}
 
 	@GetMapping("/")
 	public String showForm(Model model) {
 		User user = new User();
+		List<String> providerList = Arrays.asList("FiOS", "Cox", "Comcast");
+		List<String> channelsList = Arrays.asList("The Most FiOS TV", "More FiOS TV", "Your FiOS TV",
+				"FiOS TV TestDrive", "Contour TV Starter", "Contour TV Preferred", "Contour TV Preferred Plus", 
+				"Contour TV Ultimate", "STANDARD+", "SELECT+", "SIGNATURE+", "SUPER+");
 		model.addAttribute("user", user);
+		model.addAttribute("channelsList", channelsList);
+		model.addAttribute("providerList", providerList);
 
 		return "index";
 	}
 	
 	@PostMapping("/submit")
-	public String submitForm(@Valid @ModelAttribute("user") User user, BindingResult bindingResult) {
+	public String submitForm(@ModelAttribute("user") User user) {
+		userService.addUser(user);
 		System.out.println(user);
-		if (bindingResult.hasErrors()) {  
-			return "index";
-	    } else {
-	    	userService.addUser(user);
-	        return "success";
-	    }	
+		return "success";
 	}
 	
 	

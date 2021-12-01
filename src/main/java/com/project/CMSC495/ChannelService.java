@@ -7,6 +7,6 @@ import com.project.CMSC495.Channels;
 public interface ChannelService {
 	
 	
-	public Iterable<Channels> getAllChannels();
+	public List<Channels> getAllChannels();
 	
 }
