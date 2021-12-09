@@ -42,6 +42,18 @@
 	margin-bottom: 15px;
 	text-align: left;
 }
+.split {
+	list-style: none;
+	width: 50%;
+	font-family: "Source Sans Pro";
+	color: #A5A5A5;
+	line-height: 24px;
+	padding-top: 0x;
+	padding-bottom: 10px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	text-align: left;
+}
 .row .columns p {
 	padding-left: 10%;
 	padding-right: 10%;
@@ -177,12 +189,18 @@
 /* TABLES */
 .con-table {
     border-collapse: collapse;
-    margin: 25px 0;
+    margin-left: 50px;
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
+.con-table td:nth-child(1) {
+  	background-color: #949494;
+	font-weight: bold;
+	width: 35%;
+}
+
 .con-table tr:nth-child(odd) {
   	background-color: #01B2D1;
 }
@@ -373,8 +391,7 @@ body {
 .social .social_icon img {
 	width: 80%;
 }
-.container .secondary_header {
-}
+
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
@@ -538,6 +555,7 @@ input[type=text], select, textarea {
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: #04AA6D;
+  margin: 5px;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -552,6 +570,7 @@ input[type=submit]:hover {
 /* Style the submit button with a specific background color etc */
 input[type=reset] {
   background-color: #04AA6D;
+  margin: 5px;
   color: white;
   padding: 12px 20px;
   border: none;

@@ -1,4 +1,4 @@
-package com.project.CMSC495;
+ package com.project.CMSC495;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,6 +27,7 @@ public class Channels {
 	private Boolean philo;
 	private Boolean sling;
 	private Boolean youtube;
+	private String blank;
 
 	public int getChannel_id() {
 		return channel_id;
@@ -75,6 +76,9 @@ public class Channels {
 	}
 	public Boolean getYouTube() {
 		return youtube;
+	}
+	public String getBlank() {
+		return blank;
 	}
 	
 	public void setChannel_id(int channel_id) {
@@ -125,11 +129,14 @@ public class Channels {
 	public void setYouTube(Boolean youtube) {
 		this.youtube = youtube;
 	}
+	public void setBlank(String blank) {
+		this.blank = blank;
+	}
 	
     // override toString()
     @Override
     public String toString() {
-    	List<String> channelList = Arrays.asList(channel_name); 
+    	List<String> channelList = Arrays.asList(String.valueOf(channel_name)); 
     	String channelListString = String.join(", ", channelList );
         return channelListString;
     }

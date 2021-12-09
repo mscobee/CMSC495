@@ -6,6 +6,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CMSC495 Team Two - Cord Cutter WebApp</title>
 <link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
 </head>
@@ -27,27 +29,15 @@
 	</center>
   </header>
   <section>
-    <h2 class="noDisplay">REPORT</h2>
+    <h2 class="noDisplay">Main Content</h2>
     <article class="left_article">
-	<div class="container">
-	  <form action="sendmail">
-
-		<label for="fname">First Name</label>
-		<input type="text" id="fname" name="fname" placeholder="Enter your first name">
-		
-		<label for="sender">E-Mail Address</label>
-		<input type="text" id="sender" name="sender" placeholder="Enter your email address. a copy of this message will be sent to the email you enter here.">
-
-		<label for="text">Message</label>
-		<textarea id="text" name="text" placeholder="Enter your message." style="height:200px"></textarea>
-
-		<input type="submit" value="Submit">
-
-	  </form>
-	</div>
-  </article>
-  <aside class="right_article"><img src="images/CutTheCord_V2.jpg" alt="" width="400" height="200" class="placeholder"/> </aside>
+      <h3>This is about</h3>
+      <p>Your Email Was sent</p>
+    </article>
+    <aside class="right_article"><img src="images/CutTheCord_V2.jpg" alt="" width="400" height="200" class="placeholder"/> </aside>
   </section>
+  <div class="row">  
+
 <div class="row blockDisplay">
     <div class="column_half left_half">
       <h2 class="column_title"><%= new SimpleDateFormat("E, MMMM dd yyyy").format(new java.util.Date())%></h2>

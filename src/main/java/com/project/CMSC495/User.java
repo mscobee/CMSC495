@@ -1,19 +1,10 @@
-/* Name: Mohammed Shaikh, Michael Scobee, Eddy Owings, Anthony Pede
- * CMSC 495
- * Capstone project
- * 
- * This java file defines the data elements associated with each created user. All of the 
- * setters and getters are listed here for all of the fields that are going to be 
- * associated with each user entry in the database, like name, email, provider, and channels.
- * 
- */
-
-
 package com.project.CMSC495;
 
 import java.util.Arrays;
 import java.util.List;
 import javax.persistence.*;
+import javax.validation.constraints.*;
+
 
 
 @Entity
@@ -24,7 +15,10 @@ public class User {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="id")
 	private int id;
+	@NotBlank
     private String name;
+    @NotBlank
+    @Email(message = "Please enter a valid e-mail address")
     private String email;
     private String provider;
     private String channels;

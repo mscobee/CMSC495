@@ -38,18 +38,21 @@
         <span>TV Package: </span><span>${user.channels}</span><br/>
         <%-- ${user} --%>
         
-        
+        <table>
+        <tr>
         <form:form action="results" method="post" modelAttribute="user">
-        	<input type="Submit" value="Continue"> 
+        	<input type="Submit" value="Continue">
         </form:form>
         
         <form:form action="back" method="post" modelAttribute="user">
-   			<form:input type="hidden" path="id" value="${user.id}"/><br/>
+   			<form:input type="hidden" path="id" value="${user.id}"/>
         	<input type="Submit" value="Back"> 
         </form:form>
+        </tr>
+        </table>
     </div>
     </article>
-    <aside class="right_article"><img src="images/placeholder.jpg" alt="" width="400" height="200" class="placeholder"/> </aside>
+    <aside class="right_article"><img src="images/CutTheCord_V2.jpg" alt="" width="400" height="200" class="placeholder"/> </aside>
   </section>
   <div class="row">  
 
@@ -62,10 +65,10 @@
     </div>
   </div>
   <div class="social">
-    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="images/youtube.jpg" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="images/fubo.png" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="images/Sling.png" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="images/Philo.jpg" width="100" alt="" class="thumbnail"/></p>
   </div>
   <footer class="secondary_header footer">
     <div class="copyright">&copy;2021 - <strong>AWESOME PROJECT</strong></div>
